@@ -67,7 +67,7 @@ export const skills = [
 
 export const publications = [
 	{
-    title: "mochi",
+    title: "mochi22",
     authors: "Alejandro Vásquez-Echeverría, Lucía Alvarez-Nuñez, Meliza Gonzalez, Tianna Loose, Fanny Rudnitzky",
     journal: "mochi",
     time: "2025",
