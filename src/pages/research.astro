@@ -3,7 +3,7 @@ import Layout from "@/layouts/Layout.astro";
 import { profile } from "@/settings";
 import BetterIcon from "@/components/ui/BetterIcon.astro";
 import List from "@/components/ui/List.astro";
-import {RESEARCH_ICONS} from "@/data/researchIcons";
+import { RESEARCH_ICONS } from "@/data/researchIcons";
 
 const { research_areas } = profile;
 ---
@@ -14,10 +14,28 @@ const { research_areas } = profile;
 
     <div class="mb-12">
       <p class="text-lg mb-6">
-        My research focuses on groundbreaking investigations into radioactivity and the discovery of new radioactive elements. Through meticulous experimental techniques and innovative methodologies, I aim to advance our understanding of radioactive phenomena and their applications in both physics and chemistry.
+        My research integrates behavioral science with data-driven methodologies
+        to understand how people think, feel, and act in real-world settings. I
+        specialize in analyzing large-scale psychological and social
+        datasets—using tools such as multilevel modeling, structural equation
+        modeling, and machine learning—to produce insights that inform public
+        policy, education, and health interventions.
       </p>
       <p class="text-lg mb-6">
-        This interdisciplinary approach has led to significant discoveries, including the isolation of polonium and radium, contributing to the foundation of modern nuclear physics and radiochemistry.
+        I have led interdisciplinary projects that translate complex behavioral
+        constructs, like future orientation and well-being, into measurable
+        indicators that support actionable decision-making. My work is grounded
+        in real impact: partnering with public institutions, universities, and
+        international organizations to improve social programs and educational
+        outcomes.
+      </p>
+      <p class="text-lg mb-6">
+        Currently, I work at the intersection of academic research and applied
+        data science, combining big data analytics, behavioral modeling, and
+        artificial intelligence. I continue to lead interdisciplinary teams,
+        design analytic strategies, and publish scientific findings, while also
+        applying these methods to business and policy-driven environments to
+        support evidence-based decision-making and social innovation.
       </p>
     </div>
 
@@ -37,7 +55,10 @@ const { research_areas } = profile;
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  d={RESEARCH_ICONS[area.field as keyof typeof RESEARCH_ICONS]?.path || RESEARCH_ICONS['computer-science'].path}
+                  d={
+                    RESEARCH_ICONS[area.field as keyof typeof RESEARCH_ICONS]
+                      ?.path || RESEARCH_ICONS["computer-science"].path
+                  }
                 />
               </svg>
             </BetterIcon>
@@ -50,20 +71,86 @@ const { research_areas } = profile;
       }
     </div>
 
-    <List listTitle="Current Projects" listItems={[
-      {
-        title: "Radioactivity Studies",
-        description: "Investigation of radioactive properties in uranium minerals and isolation of new radioactive elements."
-      },
-      {
-        title: "Measurement Techniques",
-        description: "Development of precise methods for measuring radioactive emissions and their properties."
-      }
-    ]} />
+    <List
+      listTitle="Current Projects"
+      listItems={[
+        {
+          title: "Strategic Leadership in Data-Driven Behavioral Research",
+          description:
+            "Over the past six years, I have led interdisciplinary data science projects exploring behavior, health, and education. I co-developed analytic strategies with stakeholders, managed analyst teams, and oversaw all stages from data cleaning to insight communication. This cross-cutting work includes defining research questions, selecting statistical models, ensuring data quality, and communicating results through policy briefs, academic conferences, public radio, and internal reports. These projects reflect my ability to lead collaborative, impact-oriented initiatives with both technical rigor and strategic vision.",
+        },
+        {
+          title:
+            "Longitudinal Modeling of Future Orientation and Health-Related Behaviors",
+          description:
+            "Conducted a large-scale longitudinal study (N = 727) to analyze weekly fluctuations in the Consideration of Future Consequences (CFC), using general and domain-specific short-form scales. Conducted multilevel confirmatory factor analysis (MCFA) to validate the structure of the CFC across repeated measures, and computed omega coefficients for inter- and intraindividual reliability. Estimated intra-class correlations (ICCs) to assess temporal stability and variability of CFC scores. Using multilevel regression models with person-centered predictors, I examined how weekly changes in future orientation were associated with healthy eating, academic engagement, and workplace behavior. Additional analyses included one-way ANOVA with Tukey post-hoc tests, descriptive statistics, and Pearson correlations to explore patterns of change over time.",
+        },
+        {
+          title:
+            "Identifying Behavioral Profiles through Latent Modeling of Future Orientation",
+          description:
+            "Conducted Confirmatory Factor Analysis to assess the structure and consistency of domain-specific CFC scales. Then used Latent Profile Analysis (LPA) to identify psychological profiles based on immediate and future-oriented thinking across domains such as health, exercise, and work. Behavioral outcomes were compared across profiles using t-tests and ANOVA, revealing congruent and incongruent orientation patterns linked to real-life actions.",
+        },
+        {
+          title:
+            "Multilevel Modeling of Dyadic Data on Future Orientation and Well-Being",
+          description:
+            "Conducted a five-day diary study with 60 romantic couples (600 observations total) to examine the role of daily and individual differences in the Consideration of Future Consequences (CFC) and their association with personal happiness and relationship satisfaction. Assessed intra- and interindividual variability using intraclass correlation coefficients (ICCs) at the day, person, and couple level. Applied multilevel modeling with random intercepts at the couple level to test the effects of individual CFC scores and dyadic similarity on well-being outcomes. Developed and compared nested models to evaluate fixed and interaction effects, including the moderating role of CFC similarity. Controlled for covariates such as age and number of children. Visualized interaction effects to interpret patterns of moderation within dyads.",
+        },
+        {
+          title:
+            "Structural Equation Modeling of Maternal Predictors of Child Development",
+          description:
+            "Analyzed large-scale data from a nationally representative sample of mothers and children (N ≈ 3,600) to evaluate how maternal personality traits, depressive symptoms, and parenting practices influence cognitive-motor and socioemotional development in early childhood. Applied Structural Equation Modeling (SEM) to test mediation effects and indirect pathways, accounting for covariance among psychological and socioeconomic variables. Controlled for income and other demographic factors to isolate predictors with the highest impact on child outcomes. The findings support data-informed strategies for targeting early developmental interventions.",
+        },
+        {
+          title:
+            "Predictive Modeling of University Dropout Using Psychological and Cognitive Factors",
+          description:
+            "Integrated survey and administrative data from second-year university students to investigate how personality traits (Big Five), future orientation, and fluid intelligence predict dropout behavior. Modeled both instructional and systemic dropout decisions using Probit and Multinomial Logistic Regression, controlling for sociodemographic and economic covariates. Compared predictive effects across academic disciplines to identify distinct dropout patterns in Economics and Psychology cohorts. Conducted feature selection and evaluated model fit to identify top predictors of dropout behavior. The results support data-driven interventions for improving student retention and tailoring academic support policies.",
+        },
+        {
+          title:
+            "Evaluating the Impact of Misinformation Awareness Interventions",
+          description:
+            "Led a data-driven study to evaluate the effectiveness of an educational workshop aimed at increasing awareness of misinformation among the Spanish population. The project involves a pre-post design, with survey data collected before and after the training sessions. Responsible for research design, development of measurement instruments, and data analysis strategy. The goal is to assess the short-term impact of the intervention on participants’ critical thinking and awareness of disinformation, generating evidence to inform future outreach and educational programs.",
+        },
+        {
+          title: "Development and Validation of Psychological Instruments",
+          description:
+            "Designed, adapted, and validated psychological measurement tools for use in health, education, and behavioral research. Combined qualitative methods—such as focus groups—with advanced statistical techniques to ensure conceptual clarity, relevance, and psychometric robustness across diverse populations and domains. Conducted Exploratory and Confirmatory Factor Analyses (EFA/CFA), including multilevel CFA, to test dimensional structure and temporal invariance. Assessed internal consistency using McDonald’s omega and evaluated predictive validity through correlational methods and person-centered approaches such as latent profile analysis. These tools have been applied in complex behavioral studies involving large-scale, repeated-measures, and dyadic designs.",
+        },
+      ]}
+    />
 
     <h2 class="text-2xl font-bold mb-6">Research Impact</h2>
     <p class="text-lg mb-6">
-      My research has opened new frontiers in radioactivity studies, leading to practical applications in both scientific research and medical treatments. The discoveries have revolutionized our understanding of atomic structure and radioactive decay processes.
+      Throughout my career, I’ve been driven by the belief that data science can
+      be a powerful tool for solving real-world problems and driving social
+      change. I’ve applied this mindset in diverse interdisciplinary
+      settings—working with governments, international organizations, and
+      universities to transform complex data into actionable knowledge.
+    </p>
+    <p class="text-lg mb-6">
+      In Uruguay, I collaborated with public institutions and the University of
+      the Republic—both within the School of Psychology and across other
+      faculties—to improve educational outcomes, evaluate social programs, and
+      support data-driven decision-making. I also worked with the Inter-American
+      Development Bank, analyzing large-scale datasets to inform evidence-based
+      public policy across Latin America.
+    </p>
+    <p class="text-lg mb-6">
+      Now based in Spain, I’m involved in projects aimed at tackling
+      disinformation, advancing inclusive education, and supporting social
+      mobility. This includes training and mentoring individuals—especially
+      women and career changers—to develop data literacy and access better job
+      opportunities in the digital economy.
+    </p>
+    <p class="text-lg mb-6">
+      Across these projects, I’ve led analytical strategies, designed research
+      protocols, and delivered insights that have supported institutional
+      learning, policy reform, and community development—demonstrating the
+      tangible impact that thoughtful data science can achieve.
     </p>
   </div>
 </Layout>
