@@ -1,4 +1,5 @@
 export const profile = {
+	shortName: 'Lucía',
 	fullName: 'Lucía Alvarez Nuñez',
 	title: 'Phd.',
 	institute: 'Complutense University of Madrid and University of the Republic of Uruguay (PhD under a co-tutelle agreement)',
